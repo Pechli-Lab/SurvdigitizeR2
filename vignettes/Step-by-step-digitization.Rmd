@@ -165,7 +165,7 @@ step7 <- range_detect(step1_fig = step1,
 
 ```{r}
 # Merging x and y-axis values with curves
-step8 <- fig_summarize(step6, step7)
+step8 <- fig_summarize(step6, step7,y_start = y_start,y_end = y_end)
 
 step8 %>%
  ggplot(aes(x = time, y = St, color = curve, group = curve)) +

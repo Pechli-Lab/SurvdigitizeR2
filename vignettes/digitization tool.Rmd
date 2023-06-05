@@ -75,14 +75,13 @@ t_impute_size     = 0    # the number of time intervals for curve overlapping ch
 
 
 ```{r , warning=FALSE, message= FALSE}
-out <- SurvdigitizeR2::survival_digitize(img_path = t_img_path,
+out <- survival_digitize(img_path = t_img_path,
                           num_curves = t_num_curves ,
                           x_start = t_x_start,  x_end = t_x_end,  x_increment = t_x_increment,
                           y_start = t_y_start,  y_end = t_y_end,  y_increment = t_y_increment,
                           y_text_vertical = t_y_text_vertical,
                           impute_size = 0)
 
-result_name   = img_name
 ```
 
 ## Save the Result to a CSV file

@@ -30,7 +30,8 @@ fun_ocrtotbl <- function(k1){
 #' @return # a list with the Y_0pixel where the y-axis starts, y_increment, X_0pixel and x_increment.
 #' @export
 #'
-#' @examples
+#' @examples # range_detect(step1_fig, step2_axes, x_start, x_end, x_increment,y_start, y_increment, y_end, y_text_vertical)
+#'
 range_detect  <- function(step1_fig, step2_axes, x_start, x_end, x_increment,
                           y_start, y_increment, y_end, y_text_vertical){
 

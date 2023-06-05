@@ -7,6 +7,7 @@
 #' @export
 #'
 #' @examples # overlap_detect(fig.dataframe, nr_neighbors = 20)
+#'
 overlap_detect <- function(fig.grp, nr_neighbors = 20){
 
   library(FNN)
