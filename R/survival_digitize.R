@@ -35,7 +35,7 @@ survival_digitize <- function(img_path,
                                y_end,
                                y_increment,
                                y_text_vertical,
-                               nr_neighbors = 50,
+                               nr_neighbors = 20,
                                enhance = F,
                                impute_size = 0){
 
@@ -56,6 +56,7 @@ survival_digitize <- function(img_path,
 
   if(impute_size > 0){
   step4 <- impute_overlap(step4,impute_size)}
+
   # Step 5 Fill in missing/overlapped pixels
   step5 <- overlap_detect(fig.grp =step4, nr_neighbors =nr_neighbors) #add num_neighbor as parameter
 

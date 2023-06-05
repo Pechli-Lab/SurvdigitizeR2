@@ -9,7 +9,7 @@
 #' # fig_summarize(lines_vector, range_list, y_start, y_end)
 #' @export
 #'
-fig_summarize <-function(lines_vector,range_list,y_start = y_start,y_end = y_end){
+fig_summarize <-function(lines_vector,range_list,y_start = 0,y_end = 1){
 
   require(tidyr)
   lines_vector <- bind_rows(lines_vector)
